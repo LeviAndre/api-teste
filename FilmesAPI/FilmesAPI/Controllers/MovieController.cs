@@ -13,5 +13,17 @@ namespace FilmesAPI.Controllers
         public void postMovie([FromBody] Movie movie) {
             movies.Add(movie);
         }
+
+        [HttpGet]
+        public IEnumerable<Movie> GetMovies([FromQuery]int skip = 0, [FromQuery] int take = 50)
+        {
+            return movies.Skip(skip).Take(take);
+        }
+
+        [HttpGet("{id}")]
+        public Movie? GetMovie(int id)
+        {
+            return movies.FirstOrDefault(el => el.ID == id);
+        }
     }
 }
