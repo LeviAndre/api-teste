@@ -10,8 +10,9 @@ namespace FilmesAPI.Controllers
         private static List<Movie> movies = new List<Movie>();
 
         [HttpPost]
-        public void postMovie([FromBody] Movie movie) {
+        public IActionResult postMovie([FromBody] Movie movie) {
             movies.Add(movie);
+            return CreatedAtAction(nameof(GetMovie), new { id = movie.ID }, movie);
         }
 
         [HttpGet]
@@ -21,9 +22,12 @@ namespace FilmesAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public Movie? GetMovie(int id)
+        public IActionResult GetMovie(int id)
         {
-            return movies.FirstOrDefault(el => el.ID == id);
+            var movie = movies.FirstOrDefault(el => el.ID == id);
+            if (movie == null) return NotFound();
+            return Ok(movie);
+
         }
     }
 }
