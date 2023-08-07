@@ -9,6 +9,9 @@ namespace FilmesAPI.Profiles
         public MovieProfile()
         {
             CreateMap<CreateMovieDTO, Movie>();
+            CreateMap<UpdateMovieDTO, Movie>();
+            CreateMap<Movie, UpdateMovieDTO>();
+            CreateMap<Movie, ReadMovieDTO>();
         }
     }
 }
