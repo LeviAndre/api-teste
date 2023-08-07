@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UiLqb4TTvp0xLkNyKA4chhXk72DgjV8MBUpZ8MOUGY0E5CMflMJerctuMjw1KcypIvOn4gs5Clv3DtgSvr6cIQ==",
+  "dgSpecHash": "dobtHBwqWjvtzgkQ3gpzeRT51cbcmsL849UUSuXnI2c6wU/SP8ANfdDjyW/+TLam5K1EFyG0+m5OZAn3hlojXA==",
   "success": true,
   "projectFilePath": "D:\\Repos\\APIProjeto\\api-teste\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\andre.levi_admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\andre.levi_admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\andre.levi_admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\andre.levi_admin\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "C:\\Users\\andre.levi_admin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.9\\microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "C:\\Users\\andre.levi_admin\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.9\\microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
